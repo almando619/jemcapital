@@ -1,0 +1,30 @@
+1) Home
+	-> About company Preview ---> with more (link to about us page)
+	-> Services Preview ---> Image slider with more (link to Services page)
+	-> Real Estate Preview ----> Image slider of Real estate products
+	-> Our Clients
+	-> Footer
+2) About us
+	-> About company in depth
+	-> Footer
+3) services
+	-> Grid of all services
+	-> Real Estate
+		3.X) -> Individual page to every service
+	-> Footer
+4) Real Estate
+	-> Information on Real Estate
+	-> List of Real Estate products
+	-> Link to Other Services
+		4.1) -> (Admin only) Page to upload new real estate product
+		4.2) -> (Admin only) Page to edit real estate product
+		4.3) -> (Admin only) Page to manage (list) all real estate products
+	-> Footer
+5) Brela
+	-> Information on JEMCAPITAL assistance with BRELA
+	-> Link to BRELA Website
+	-> Footer
+6) Training
+	
+	-> Information on training
+	-> Footer
