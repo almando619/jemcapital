@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,500&display=swap");
+:root {
+  --colorBg: rgb(20, 21, 21);
+  --colorText: #d5d5d5;
+  --colorTextMuted: #aaaaaa;
+  --colorPrimary: #ffffff;
+  --colorSecondary: #636998;
+  --colorAccent: #e1da07;
+  --colorAccentLight: #948f00;
+
+  --topBarHeight: 90px;
+}
+
+body {
+  background-color: var(--colorBg);
+  color: var(--colorText);
+  height: 100vh;
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  font-family: "Outfit", sans-serif;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #53525067;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #959595;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(50, 50, 50, 0.1) rgba(90, 90, 90, 0.9);
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.muted-text {
+  color: var(--colorTextMuted);
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-no-wrap {
+  flex-wrap: nowrap !important;
+}
+
+.flex-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-column-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-space-around {
+  justify-content: space-around;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.container-20 {
+  width: 20%;
+  flex-basis: 20%;
+}
+
+.container-30 {
+  width: 30%;
+  flex-basis: 30%;
+}
+
+.container-33 {
+  width: 33%;
+  flex-basis: 33%;
+}
+
+.container-40 {
+  width: 40%;
+  flex-basis: 40%;
+}
+
+.container-50 {
+  width: 50%;
+  flex-basis: 50%;
+}
+
+.container-60 {
+  width: 60%;
+  flex-basis: 60%;
+}
+
+.container-70 {
+  width: 70%;
+  flex-basis: 70%;
+}
+
+.container-80 {
+  width: 80%;
+  flex-basis: 80%;
+}
+
+.container-100 {
+  width: 100%;
+  flex-basis: 100%;
+}
+
+@media only screen and (max-width: 850px) {
+  /* For mobile phones: */
+  [class*="container-"] {
+    width: 100%;
+    flex-basis: 100%;
+    height: unset;
+  }
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.main-container {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  /* overflow-y: auto; */
+}
+
+.spacer {
+  height: var(--topBarHeight);
+}
+
+#not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: calc(100% - 300px);
+}
+
+#not-found .image {
+  height: 50px;
+}
+
+#not-found .image img {
+  height: 100%;
+}
+
+#not-found .large-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+#not-found .small-text {
+  font-size: 1.1rem;
+}
+
+#not-found .link {
+  border: 1px solid white;
+  color: white;
+  padding: 8px 16px;
+  margin-top: 30px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+#not-found .link:hover {
+  background-color: rgba(255, 255, 255, 0.184);
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-15 {
+  margin-top: 15px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.mr-15 {
+  margin-right: 15px;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+.mr-30 {
+  margin-right: 30px;
+}
+
+.app-padding {
+  padding: 50px;
+}
+
+@media only screen and (max-width: 700px) {
+  .app-padding {
+    padding: 25px;
+  }
+}
+
+/* Typography */
+.app-heading-text {
+  font-size: 2rem;
+  color: var(--colorAccent);
+}
+
+.app-paragraph-text {
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  .app-heading-text {
+    font-size: 1.5rem;
+    color: var(--colorAccent);
+  }
+
+  .app-paragraph-text {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+}
+
+.app-link {
+  color: var(--colorAccent);
+  font-size: 1.1rem;
+  transition: all 0.5s ease;
+}
+
+.app-link:hover {
+  color: var(--colorAccentLight);
+}
+
+/* Pages Common Styles */
+.page-cover {
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+@media only screen and (max-width: 850px) {
+  /* For mobile phones: */
+  .page-cover {
+    height: 400px;
+  }
+}
+
+.page-cover img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transform: scale(1.1) rotate(1deg);
+  transition: all 1.2s ease;
+}
+
+.page-cover:hover > .page-cover-text {
+  letter-spacing: 3px;
+  opacity: 0.8;
+  font-size: 3rem;
+}
+
+.page-cover:hover > img {
+  transform: scale(1) rotate(0);
+}
+
+.page-cover .backdrop {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.271);
+  transition: all 0.5s ease;
+  backdrop-filter: grayscale(100%);
+  -webkit-backdrop-filter: grayscale(100%);
+}
+
+.page-cover .backdrop:hover {
+  backdrop-filter: grayscale(20%);
+  -webkit-backdrop-filter: grayscale(20%);
+}
+
+.page-cover-text {
+  position: relative;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+  font-size: 4rem;
+  color: var(--colorAccent);
+  letter-spacing: 3px;
+  opacity: 0.3;
+  transition: all 0.9s ease;
+}
+
+.feedback-container {
+  height: 200px;
+  width: 100%;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.full-screen-dialog {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+}
+
+.full-screen-dialog .dialog-backdrop {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.145);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+}
+
+.full-screen-dialog .dialog-content {
+  height: 90vh;
+  width: 80vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: var(--colorBg);
+  border-radius: 10px;
+  box-shadow: 0px 3px 20px 0 rgba(255, 255, 255, 0.145);
+  padding: 40px;
+  overflow-y: auto;
+}
+
+@media only screen and (max-width: 850px) {
+  .full-screen-dialog .dialog-content {
+    padding: 25px;
+  }
+}
+
+.full-screen-dialog .dialog-content iframe {
+  height: 500px;
+  width: 90%;
+}
+
+@media only screen and (max-width: 850px) {
+  .full-screen-dialog .dialog-content iframe {
+    height: 300px;
+  }
+}
+
+/* Pages Common Styles*/
+
+/* Forms */
+
+.app-form {
+}
+
+.app-form .form-input {
+  padding: 5px;
+  width: 100%;
+}
+
+.app-form .form-input .label {
+  color: rgb(187, 186, 186);
+  font-size: 0.8rem;
+}
+
+.app-form .form-input input,
+.app-form .form-input textarea,
+.app-form .form-input select {
+  padding: 8px 16px;
+  border: 2px solid rgba(255, 255, 255, 0.275);
+  background-color: rgba(255, 255, 255, 0.268);
+  border-radius: 5px;
+  width: 100%;
+  color: var(--colorText);
+}
+
+.app-form .form-input select option {
+  color: black;
+}
+
+.app-form .form-input textarea {
+  width: 100%;
+  height: 130px;
+  resize: none;
+}
+
+.app-form button {
+  min-width: 140px;
+  padding: 13px;
+  background-color: rgb(92, 92, 92);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 10px 15px 0 rgba(0, 0, 0, 0.503);
+  transition: all 0.4s ease;
+}
+
+.app-form button:hover {
+  cursor: pointer;
+}
+
+.app-form button:active {
+  box-shadow: 0px 5px 10px 0px rgba(17, 14, 24, 0.781);
+  opacity: 0.8;
+}
+
+.app-form button:disabled {
+  background-color: #999;
+  box-shadow: 0px 10px 20px 0px rgba(66, 64, 68, 0.404);
+  opacity: 0.8;
+}
+/* Forms */
+
+/* swiper */
+.swiper-pagination-bullet-active {
+  background-color: var(--colorAccent) !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--colorAccentLight) !important;
+}
