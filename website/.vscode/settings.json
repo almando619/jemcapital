@@ -18,5 +18,8 @@
         "titleBar.inactiveBackground": "#41adb999",
         "titleBar.inactiveForeground": "#15202b99"
     },
-    "peacock.color": "#41adb9"
+    "peacock.color": "#41adb9",
+    "cSpell.words": [
+        "jemcapital"
+    ]
 }

@@ -2,7 +2,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="icon" type="image/x-icon" href="assets/icons/logo_minimal.svg">
+<link rel="icon" type="image/x-icon" href="assets/icons/logo_minimal.png">
 
 <!-- Fontawesome 6 icons -->
 <link rel="stylesheet" href="assets/css/fa-css/all.css" />
@@ -31,4 +31,7 @@
 
 <!-- pages and components css -->
 <link rel="stylesheet" type="text/css" href="assets/css/app.css" />
+<link rel="stylesheet" type="text/css" href="assets/css/top-bar.css" />
+<link rel="stylesheet" type="text/css" href="assets/css/footer.css" />
+<link rel="stylesheet" type="text/css" href="assets/css/home.css" />
 <!-- pages and components css -->

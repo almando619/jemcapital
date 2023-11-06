@@ -1,7 +1,7 @@
 .top-bar {
   height: var(--topBarHeight);
   backdrop-filter: blur(3px);
-  background-color: rgba(88, 88, 88, 0.229);
+  background-color: rgba(255, 255, 255, 0.464);
   -webkit-backdrop-filter: (3px);
   border-bottom: 1px solid rgba(158, 158, 158, 0.468);
   position: fixed;
@@ -25,9 +25,11 @@
   height: 100%;
 }
 
+
 .top-bar .right {
   display: flex;
   align-items: center;
+
 }
 
 .top-bar .menu-icon {
@@ -40,6 +42,7 @@
   .top-bar .menu-icon {
     display: block;
   }
+
   .top-bar .link {
     display: none;
   }
@@ -50,15 +53,15 @@
   cursor: pointer;
 }
 
-.top-bar .link {
+.top-bar a {
   padding: 0px 5px;
   margin-right: 8px;
-  transition: all 0.5s ease;
-  color: white;
+  transition: all 0.3s ease;
+  color: var(--colorText)
 }
 
-.top-bar .link:hover {
-  border-bottom: 1px solid #e5e5e5;
+.top-bar a:hover {
+  border-bottom: 2px solid var(--colorPrimary);
 }
 
 .top-bar .right .links-popper {
@@ -99,4 +102,6 @@
 
 .top-bar .active-link {
   color: var(--colorAccent) !important;
+  border-bottom: 2px solid var(--colorPrimary);
+  font-weight: 600;
 }

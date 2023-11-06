@@ -1,6 +1,6 @@
 .footer {
-  background-color: rgba(32, 32, 32, 0.653);
-  /* height: 200px; */
+  background-color: rgba(19, 19, 19, 0.84);
+  min-height: calc(300px);
   color: white;
   padding: 20px 100px;
   transition: all 0.5s ease;
