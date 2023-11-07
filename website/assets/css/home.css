@@ -4,6 +4,10 @@
     background-repeat: no-repeat;
 }
 
+#home-container #welcome-banner {
+    height: 65vh;
+}
+
 #home-container .logo-wrapper {
     display: flex;
     align-items: center;
@@ -11,30 +15,39 @@
 }
 
 #home-container .logo-wrapper img {
-    height: 130px;
-    margin: 40px 0;
+    height: 180px;
+    margin: 20px 0;
 }
 
 #home-container #image-container-1 {
     background-image: url("../images/people_1.jpg");
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px;
-    width: 400px;
-    border-radius: 50%;
     transition: all 0.3s ease;
+    color: white;
+    position: relative;
+}
+
+#home-container .welcome-shader {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.653);
 }
 
 @media only screen and (max-width: 850px) {
     #home-container #image-container-1 {
-        height: 300px;
-        width: 300px;
+        height: 450px;
     }
 
     #home-container .logo-wrapper img {
         width: 80%;
         height: auto;
-        margin: 30px 0;
+        margin: 20px 0;
     }
 }
 
@@ -84,4 +97,8 @@
 
 .services-swiper .swiper-slide:hover .services-swiper .swiper-slide img {
     transform: scale(1.1);
+}
+
+.services-swiper .swiper-pagination {
+    margin-top: 20px;
 }

@@ -60,13 +60,14 @@
   color: var(--colorText)
 }
 
-.top-bar a:hover {
+.top-bar a:hover,
+.top-bar .right .links-popper a:hover {
   border-bottom: 2px solid var(--colorPrimary);
 }
 
 .top-bar .right .links-popper {
   position: absolute;
-  background-color: rgba(84, 84, 84, 0.918);
+  background-color: rgb(255, 255, 255);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: (3px);
   border-bottom-left-radius: 5px;
@@ -76,8 +77,8 @@
   top: var(--topBarHeight);
   right: 0;
   z-index: 5;
-  width: 200px;
-  min-height: 300px;
+  width: 350px;
+  height: calc(100vh - var(--topBarHeight));
   padding: 10px 0px;
 }
 
@@ -87,17 +88,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgb(246, 246, 246);
 }
 
 .top-bar .right .links-popper a {
   transition: all 0.5s ease;
   color: var(--colorText);
-}
-
-.top-bar .right .links-popper a:hover {
-  border-bottom: 1px solid #a1a1a1;
-  color: var(--colorPrimary);
 }
 
 .top-bar .active-link {

@@ -11,24 +11,29 @@
     <div class="main-container" id="home-container">
         <div class="spacer"></div>
         <!-- Welcome section -->
-        <div class="flex-row">
-            <div class="container-50 app-padding flex-row justify-content-center">
-                <div id="image-container-1">
-                </div>
+        <div id="welcome-banner" class="flex-column align-items-center app-padding justify-content-center">
+            <div class="logo-wrapper">
+                <img src="./assets/icons/logo.png" alt="JEM | Capital" id />
             </div>
-            <div class="container-50 app-padding">
-                <div class="logo-wrapper">
-                    <img src="./assets/icons/logo.png" alt="JEM | Capital" id />
+            <p class="text-align-center">FINANCIAL CONSULTANCY COMPANY & REAL ESTATE AGENT</p>
+        </div>
+        <div class="flex-row">
+            <div class="container-100" id="image-container-1">
+                <div class="welcome-shader app-padding flex-row align-items-center justify-content-center">
+                    <h2>
+                        We are a financial consultancy & real estate company offering a wide variety of services including
+                        Accounting, Auditing, Tax, Advisory and many others. Click <a class="text-accent" href="/about">here</a>
+                        to learn more about us.
+                    </h2>
                 </div>
-                <h2>We are a financial consultancy & real estate company offering a wide variety of services including
-                    Accounting, Auditing, Tax, Advisory and many others.</h2>
+
             </div>
         </div>
         <!-- Welcome section -->
 
         <!-- Services swiper -->
         <div class="app-padding mt-20 text-align-center">
-            <h1>What we Offer</h1>
+            <h1>Our Services</h1>
         </div>
         <div class="swiper services-swiper">
             <div class="swiper-wrapper">
@@ -70,19 +75,19 @@
                 </div>
                 <div class="swiper-slide">
                     <div>
-                        <a href="/services-budgeting">
-                            <img src="./assets/images/laptop_3.jpg" />
+                        <a href="/services-efd-machines">
+                            <img src="./assets/images/efd_machines.png" />
                             <div class="shader"></div>
-                            <div class="title">Budgeting</div>
+                            <div class="title">EFD Machines</div>
                         </a>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div>
-                        <a href="/services-budgeting">
-                            <img src="./assets/images/laptop_3.jpg" />
+                        <a href="/services">
+                            <img src="./assets/images/more_services.png" />
                             <div class="shader"></div>
-                            <div class="title">See All Services</div>
+                            <div class="title"><span class="mr-10">View More Services</span><i class="fas fa-long-arrow-alt-right"></i></div>
                         </a>
                     </div>
                 </div>

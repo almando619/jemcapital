@@ -11,6 +11,13 @@
   --colorAccentLight: #802323;
 
   --topBarHeight: 90px;
+  --appPadding: 50px;
+}
+
+@media only screen and (max-width: 700px) {
+  :root {
+    --appPadding: 25px;
+  }
 }
 
 body {
@@ -197,6 +204,7 @@ a {
   /* overflow-y: auto; */
 }
 
+/* Margins */
 .spacer {
   height: var(--topBarHeight);
 }
@@ -221,6 +229,27 @@ a {
   margin-top: 30px;
 }
 
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 .mr-5 {
   margin-right: 5px;
 }
@@ -241,8 +270,30 @@ a {
   margin-right: 30px;
 }
 
+.ml-5 {
+  margin-left: 5px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+/* Margins */
+
 .app-padding {
-  padding: 50px;
+  padding: var(--appPadding);
 }
 
 @media only screen and (max-width: 700px) {
@@ -280,6 +331,14 @@ p {
 
 .text-align-right {
   text-align: right;
+}
+
+.text-accent {
+  color: var(--colorAccent);
+}
+
+.text-primary {
+  color: var(--colorPrimary);
 }
 
 /* Typography */
