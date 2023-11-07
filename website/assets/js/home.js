@@ -34,6 +34,6 @@ if (window.location.pathname === `${Config.PATHNAME}/home`) {
   initSwiper();
 
   $(window).resize(() => {
-    window.location.href = window.location.href;
+    initSwiper();
   });
 }
