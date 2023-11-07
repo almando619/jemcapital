@@ -39,7 +39,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div>
-                        <a href="/services-audit">
+                        <a href="audit">
                             <img src="./assets/images/books_2.jpg" />
                             <div class="shader"></div>
                             <div class="title">Audit & Assurance</div>
@@ -48,7 +48,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div>
-                        <a href="/services-tax">
+                        <a href="tax">
                             <img src="./assets/images/tax_1.jpg" />
                             <div class="shader"></div>
                             <div class="title">Tax Consultation</div>
@@ -57,7 +57,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div>
-                        <a href="/services-accounting">
+                        <a href="accounting">
                             <img src="./assets/images/business_3.jpg" />
                             <div class="shader"></div>
                             <div class="title">Accounting</div>
@@ -66,7 +66,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div>
-                        <a href="/services-quickbook">
+                        <a href="quickbook">
                             <img src="./assets/images/quickBooks_1.png" />
                             <div class="shader"></div>
                             <div class="title">Quickbook Software</div>
@@ -75,7 +75,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div>
-                        <a href="/services-efd-machines">
+                        <a href="efd-machines">
                             <img src="./assets/images/efd_machines.png" />
                             <div class="shader"></div>
                             <div class="title">EFD Machines</div>
@@ -84,7 +84,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div>
-                        <a href="/services">
+                        <a href="services">
                             <img src="./assets/images/more_services.png" />
                             <div class="shader"></div>
                             <div class="title"><span class="mr-10">View More Services</span><i class="fas fa-long-arrow-alt-right"></i></div>

@@ -15,8 +15,8 @@ menuIcon.click(() => {
 });
 
 logoIcon.click(() => {
-  if (window.location.pathname !== "/m2vproduction/home") {
-    window.location.pathname = "/m2vproduction/home";
+  if (window.location.pathname !== "/") {
+    window.location.pathname = "/";
   }
 });
 
@@ -42,7 +42,8 @@ $(window).click((e) => {
 });
 
 $(document).ready(() => {
-  switch (window.location.pathname.substring(18)) {
+  // alert(window.location.pathname.substring(19));
+  switch (window.location.pathname.substring(19)) {
     case "/home":
       $("#link-home").addClass("active-link");
       $("#link-home-alt").addClass("active-link");
@@ -59,9 +60,9 @@ $(document).ready(() => {
       $("#link-real-estate").addClass("active-link");
       $("#link-real-estate-alt").addClass("active-link");
       break;
-    case "/real-training":
-      $("#link-real-training").addClass("active-link");
-      $("#link-real-training-alt").addClass("active-link");
+    case "/training":
+      $("#link-training").addClass("active-link");
+      $("#link-training-alt").addClass("active-link");
       break;
     case "/brela":
       $("#link-brela").addClass("active-link");

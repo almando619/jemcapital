@@ -5,7 +5,7 @@
         </div>
     </div>
     <div class="right">
-        <a href="home" class="link active-link" id="link-home">
+        <a href="home" class="link" id="link-home">
             Home
         </a>
         <a href="about" class="link" id="link-about">
@@ -17,10 +17,10 @@
         <a href="real-estate" class="link" id="link-real-estate">
             Real Estate
         </a>
-        <a href="services/training" class="link" id="link-training">
+        <a href="training" class="link" id="link-training">
             Training
         </a>
-        <a href="services/brela" class="link" id="link-brela">
+        <a href="brela" class="link" id="link-brela">
             BRELA
         </a>
 
@@ -38,10 +38,10 @@
             <a href="real-estate" class="link-alt" id="link-real-estate-alt">
                 Real Estate
             </a>
-            <a href="services/training" class="link-alt" id="link-training-alt">
+            <a href="training" class="link-alt" id="link-training-alt">
                 Training
             </a>
-            <a href="services/brela" class="link-alt" id="link-brela-alt">
+            <a href="brela" class="link-alt" id="link-brela-alt">
                 BRELA
             </a>
 
