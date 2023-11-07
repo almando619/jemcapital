@@ -1,4 +1,4 @@
-if (window.location.pathname === "/jemcapital/website/home") {
+if (window.location.pathname === `${Config.PATHNAME}/home`) {
   //swiper
   var swiper = null;
 

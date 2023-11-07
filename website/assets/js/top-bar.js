@@ -42,8 +42,8 @@ $(window).click((e) => {
 });
 
 $(document).ready(() => {
-  // alert(window.location.pathname.substring(19));
-  switch (window.location.pathname.substring(19)) {
+  // alert(window.location.pathname.substring(Config.HREF_START_INDEX));
+  switch (window.location.pathname.substring(Config.HREF_START_INDEX)) {
     case "/home":
       $("#link-home").addClass("active-link");
       $("#link-home-alt").addClass("active-link");
