@@ -1,4 +1,4 @@
 const Config = {
-  PATHNAME: "",
-  HREF_START_INDEX: 16,
+  PATHNAME:"/jemcapital/website",
+  HREF_START_INDEX:19,
 };
