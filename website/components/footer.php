@@ -8,6 +8,12 @@
                 +255 784 745 535
             </div>
         </a>
+        <a href="tel:+255736200707">
+            <div class="contact-item">
+                <img src="./assets/icons/icons_phone.png" alt="📞">
+                +255 736 200 707
+            </div>
+        </a>
         <a href="mailto:info@jemcapital.co.tz">
             <div class="contact-item">
                 <img src="./assets/icons/icon_mail.png" alt="✉️">
@@ -41,6 +47,12 @@
             <div class="contact-item">
                 <img src="./assets/icons/icon_facebook.png" alt="🗨️">
                 @jemcapitallimited
+            </div>
+        </a>
+        <a href="#">
+            <div class="contact-item">
+                <img src="./assets/icons/icon_linkedin.png" alt="🗨️">
+                jem_capital
             </div>
         </a>
     </div>

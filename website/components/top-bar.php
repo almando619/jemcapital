@@ -26,7 +26,7 @@
 
         <!-- Mobile view links -->
         <div class="links-popper" id="top-bar-links-popper">
-            <a href="home" class="link-alt active-link" id="link-home">
+            <a href="home" class="link-alt" id="link-home-alt">
                 Home
             </a>
             <a href="about" class="link-alt" id="link-about-alt">
