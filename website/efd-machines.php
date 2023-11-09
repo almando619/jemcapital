@@ -13,7 +13,7 @@
         <!-- banner -->
         <div class="page-banner-wrapper mb-20">
             <div class="page-banner">
-                <img src="./assets/images/people_1.jpg" alt="image">
+                <img src="./assets/images/efd_machines.png" alt="image">
                 <div class="shader"></div>
             </div>
             <div class="heading-container">
