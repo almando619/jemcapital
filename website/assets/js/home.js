@@ -34,6 +34,14 @@ if (window.location.pathname === `${Config.PATHNAME}/home`) {
   initSwiper();
 
   $(window).resize(() => {
-    initSwiper();
+    if ($(window).width() <= 600) {
+      swiper.params.slidesPerView = 1;
+    } else if ($(window).width() > 600 && $(window).width() <= 750) {
+      swiper.params.slidesPerView = 2;
+    } else if ($(window).width() > 750 && $(window).width() < 1080) {
+      swiper.params.slidesPerView = 3;
+    } else {
+      swiper.params.slidesPerView = 4;
+    }
   });
 }

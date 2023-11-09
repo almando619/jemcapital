@@ -22,7 +22,7 @@
                 <div class="welcome-shader app-padding flex-row align-items-center justify-content-center">
                     <h2>
                         We are a financial consultancy & real estate company offering a wide variety of services including
-                        Accounting, Auditing, Tax, Advisory and many others. Click <a class="text-accent" href="/about">here</a>
+                        Accounting, Auditing, Tax, Advisory and many others. Click <a class="text-accent" href="about">here</a>
                         to learn more about us.
                     </h2>
                 </div>
@@ -69,7 +69,7 @@
                         <a href="quickbook">
                             <img src="./assets/images/quickBooks_1.png" />
                             <div class="shader"></div>
-                            <div class="title">Quickbook Software</div>
+                            <div class="title">Quickbook Accounting Software</div>
                         </a>
                     </div>
                 </div>

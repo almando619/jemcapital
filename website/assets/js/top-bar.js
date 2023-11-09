@@ -53,6 +53,13 @@ $(document).ready(() => {
       $("#link-about-alt").addClass("active-link");
       break;
     case "/services":
+    case "/audit":
+    case "/accounting":
+    case "/budgeting":
+    case "/efd-machines":
+    case "/project-management":
+    case "/quickbook":
+    case "/tax":
       $("#link-services").addClass("active-link");
       $("#link-services-alt").addClass("active-link");
       break;
