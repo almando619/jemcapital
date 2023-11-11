@@ -15,7 +15,7 @@
             <div class="logo-wrapper">
                 <img src="./assets/icons/logo.png" alt="JEM | Capital" id />
             </div>
-            <p class="text-align-center">FINANCIAL CONSULTANCY COMPANY & REAL ESTATE AGENT</p>
+            <h3 class="text-align-center mt-30">FINANCIAL CONSULTANCY COMPANY & REAL ESTATE AGENT</h3>
         </div>
         <div class="flex-row">
             <div class="container-100" id="image-container-1">
