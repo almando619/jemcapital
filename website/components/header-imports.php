@@ -35,4 +35,5 @@
 <link rel="stylesheet" type="text/css" href="assets/css/footer.css" />
 <link rel="stylesheet" type="text/css" href="assets/css/home.css" />
 <link rel="stylesheet" type="text/css" href="assets/css/services.css" />
+<link rel="stylesheet" type="text/css" href="assets/css/real-estate.css" />
 <!-- pages and components css -->

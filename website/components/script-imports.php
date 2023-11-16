@@ -5,3 +5,5 @@
 <script src="assets/js/app.js" type='text/javascript'></script>
 <script src="assets/js/top-bar.js" type='text/javascript'></script>
 <script src="assets/js/home.js" type='text/javascript'></script>
+<script src="assets/js/real-estate-add.js" type='text/javascript'></script>
+<script src="assets/js/real-estate-edit.js" type='text/javascript'></script>

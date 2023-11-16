@@ -1,0 +1,94 @@
+#image-input-wrapper {
+    width: 300px;
+}
+
+@media only screen and (max-width: 850px) {
+    #image-input-wrapper {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #image-input-wrapper {
+        width: 60%;
+    }
+}
+
+.estate-image {
+    width: 280px;
+    height: 150px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+    margin: 5px;
+}
+
+.estate-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+    .estate-image {
+        width: 90%;
+        height: 200px;
+    }
+}
+
+.estate-image .close-icon {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: var(--colorAccent);
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* view real-estate css */
+.large-image-container {
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.large-image-container img,
+.estate-image-small img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.4s ease;
+}
+
+.estate-image-small {
+    height: 80px;
+    width: 160px;
+    overflow: hidden;
+    margin: 3px;
+}
+
+.estate-image-small:hover {
+    cursor: pointer;
+}
+
+.estate-image-small:hover>img {
+    transform: scale(1.1);
+}
+
+
+/* view real estate css */
+
+/* add real estate css */
+#estate-form-view {
+    display: none;
+}
+
+/* add real estate css */

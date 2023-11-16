@@ -6,6 +6,7 @@
   --colorText: #3f3b3b;
   --colorTextMuted: #8f8e8e;
   --colorPrimary: #26d2db;
+  --colorPrimaryDark: #34a6ac;
   --colorSecondary: #2b2727;
   --colorAccent: #e00101;
   --colorAccentLight: #802323;
@@ -306,25 +307,25 @@ a {
 
 /* Typography */
 h1 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .text-align-center {
@@ -426,3 +427,78 @@ p {
     padding: 50px;
   }
 }
+
+/* page banner */
+
+
+/* app form */
+.app-form {
+  background-color: white;
+  box-shadow: 0px 5px 20px 0 rgba(50, 50, 50, 0.3);
+  padding: 100px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 950px) {
+  .app-form {
+    padding: 60px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .app-form {
+    padding: 40px;
+  }
+}
+
+.app-form input,
+.app-form textarea,
+.app-form select {
+  width: 100%;
+  border: 1px solid #d1d1d1;
+  padding: 8px 16px;
+}
+
+.app-form textarea {
+  resize: none;
+}
+
+.app-form input:focus,
+.app-form select:focus,
+.app-form textarea:focus {
+  border: 1px solid var(--colorPrimary);
+}
+
+.app-input-wrapper {
+  padding: 8px;
+}
+
+.app-form label {
+  font-size: 0.8rem;
+  color: var(--colorAccent);
+}
+
+.app-form button {
+  background-color: var(--colorPrimary);
+  color: var(--colorText);
+  font-weight: bold;
+  padding: 10px 16px;
+  border: none;
+  box-shadow: 0px 3px 10px 0 rgba(50, 50, 50, 0.3);
+  letter-spacing: 1px;
+}
+
+.app-form button:hover {
+  cursor: pointer;
+}
+
+.app-form button:active {
+  background-color: var(--colorPrimaryDark)
+}
+
+.app-form button:disabled {
+  background-color: #adacac;
+  cursor: not-allowed;
+}
+
+/* app form */
