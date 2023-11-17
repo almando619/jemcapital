@@ -73,40 +73,21 @@
                 </div>
                 <div class="container-100 flex-row">
                     <div id="image-input-wrapper">
-                        <input id="input-image" name="input-image" type="file" accept="image/*" />
+                        <input id="input-image" disabled name="input-image" type="file" accept="image/*" />
                     </div>
                     <button disabled id="button-upload">Upload</button>
                 </div>
                 <div class="flex-row mt-20 full-width" id="images-container">
-                    <div class="estate-image">
+                    <!-- <div class="estate-image">
                         <img src="./assets/images/real_estate_2.jpg" alt="">
                         <div class="close-icon">
                             <i class="fas fa-times"></i>
                         </div>
-                    </div>
-                    <div class="estate-image">
-                        <img src="./assets/images/real_estate_2.jpg" alt="">
-                        <div class="close-icon">
-                            <i class="fas fa-times"></i>
-                        </div>
-                    </div>
-                    <div class="estate-image">
-                        <img src="./assets/images/real_estate_2.jpg" alt="">
-                        <div class="close-icon">
-                            <i class="fas fa-times"></i>
-                        </div>
-                    </div>
-                    <div class="estate-image">
-                        <img src="./assets/images/real_estate_2.jpg" alt="">
-                        <div class="close-icon">
-                            <i class="fas fa-times"></i>
-                        </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <!-- Complete -->
                 <button class="mt-20" disabled id="button-finish">FINISH</button>
-
 
             </div>
             <!-- form view -->
