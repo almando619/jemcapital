@@ -32,7 +32,7 @@ if (
         const responseJSON = { ...data };
         switch (responseJSON.message) {
           case "success":
-            properties = responseJSON.data;
+            properties = responseJSON?.data?.filter((p) => p?.status === "A");
             let _html = "";
 
             properties.forEach((property) => {
