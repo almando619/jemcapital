@@ -14,3 +14,11 @@ const isEmpty = ({ value, trim = true }) => {
   }
   return false;
 };
+
+const trimText = ({ text, length }) => {
+  if (text?.length > length) {
+    return `${text?.substring(0, length)}...`;
+  } else {
+    return text;
+  }
+};

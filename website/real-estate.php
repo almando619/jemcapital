@@ -68,6 +68,33 @@
             </p>
 
             <h2 class="mt-30">Latest Updates</h2>
+
+            <!-- Real estate properties list -->
+            <div class="flex-row" id="properties-container">
+                <!-- <div class="container-50 p-10">
+                    <div class="estate-item ">
+                        <div class="image-container">
+                            <img src="./assets/images/real_estate_1.jpg" alt="image">
+                            <div class="shader"></div>
+                        </div>
+                        <div class="info">
+                            <h3 class="title"></h3>
+                            <div class="location">
+                                <i class="fas fa-map-marker-alt mr-5 text-accent"></i>
+                                <span> </span>
+                            </div>
+                            <div class="category">
+                                <i class="fa-solid fa-clipboard mr-5 text-accent"></i>
+                                <span></span>
+                            </div>
+                            <p class="mt-10 description">
+                            </p>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+            <!-- Real estate properties list -->
         </div>
         <!-- content -->
     </div>

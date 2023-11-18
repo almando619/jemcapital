@@ -3,7 +3,7 @@ require("connection.php");
 $response = new \stdClass();
 session_start();
 
-if (isset($_FILES['image-id'])) {
+if (isset($_POST['image-id'])) {
     $imageId = $_POST['image-id'];
 
     //deleting image
@@ -14,7 +14,7 @@ if (isset($_FILES['image-id'])) {
     if (file_exists($itemImage))
         unlink($itemImage);
 
-    $res = mysqli_query($conn, "DELETE FROM image_path WHERE image_id = $imageId");
+    $res = mysqli_query($conn, "DELETE FROM real_estate_images WHERE image_id = $imageId");
 
     if ($res) {
         $response->message = "success";

@@ -32,7 +32,7 @@
         <!-- Welcome section -->
 
         <!-- Services swiper -->
-        <div class="app-padding text-align-center">
+        <div class="app-padding mt-30 mb-30 text-align-center">
             <h1>Our Services</h1>
         </div>
         <div class="swiper services-swiper">
@@ -97,11 +97,14 @@
         <!-- Services swiper -->
 
         <!-- Real Estate Updates -->
-        <div class="app-padding mt-20 text-align-center">
-            <h1>Latest Updates</h1>
+        <div class="app-padding  mt-30 mb-30 text-align-center">
+            <h1>Real Estate Updates</h1>
         </div>
 
         <!-- Real Estate Updates -->
+        <div class="flex-row app-padding" id="properties-container"></div>
+
+        <div class="spacer"></div>
     </div>
     <?php include_once("components/footer.php") ?>
     <?php include_once("components/script-imports.php") ?>

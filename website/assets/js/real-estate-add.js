@@ -56,13 +56,15 @@ if (window.location.pathname === `${Config.PATHNAME}/real-estate-add`) {
     }
   });
 
-  const addDeleteImageListeners = () => {
-    images.forEach((image) => {
-      $(`#delete-image-${image?.imageId}`).click(() => {
-        if (confirm("Are you sure you want to delete this image?")) {
-          deleteImage(imageId);
-        }
-      });
+  buttonFinish.click(() => {
+    window.location.href = `${Config.PATHNAME}/real-estate`;
+  });
+
+  const addDeleteImageListener = (imageId) => {
+    $(`#delete-image-${imageId}`).click(() => {
+      if (confirm("Are you sure you want to delete this image?")) {
+        deleteImage(imageId);
+      }
     });
   };
 
@@ -279,8 +281,8 @@ if (window.location.pathname === `${Config.PATHNAME}/real-estate-add`) {
                 </div>
             `);
 
-            addDeleteImageListeners();
-
+            addDeleteImageListener(_uploadedImage?.imageId);
+            inputImage.val("");
             buttonFinish.removeAttr("disabled");
             break;
           case "error":

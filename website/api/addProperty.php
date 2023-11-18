@@ -19,7 +19,6 @@ if (
             VALUES (?,?,?,?)";
 
     $stmt = mysqli_prepare($conn, $query);
-    $testLoc = "test loc";
 
     mysqli_stmt_bind_param(
         $stmt,

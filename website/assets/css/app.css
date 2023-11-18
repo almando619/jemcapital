@@ -295,8 +295,29 @@ a {
 
 /* Margins */
 
+.p-5 {
+  padding: 5px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.p-15 {
+  padding: 15px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.p-30 {
+  padding: 30px;
+}
+
+
 .app-padding {
-  padding: var(--appPadding);
+  padding: 0 var(--appPadding);
 }
 
 @media only screen and (max-width: 700px) {
@@ -342,6 +363,10 @@ p {
 
 .text-primary {
   color: var(--colorPrimary);
+}
+
+.text-muted {
+  color: var(--colorTextMuted);
 }
 
 /* Typography */
