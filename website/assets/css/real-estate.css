@@ -87,7 +87,8 @@
 /* view real estate css */
 
 /* add real estate css */
-#estate-form-view {
+#estate-form-view,
+#estate-table-view {
     display: none;
 }
 
@@ -181,3 +182,39 @@
 }
 
 /* real estate properties list */
+
+/* Real estate management */
+.properties-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.properties-table th {
+    background: #f9f9f9;
+}
+
+.properties-table th,
+.properties-table td {
+    padding: 5px 10px;
+    border: 1px solid #e1e1e1;
+}
+
+.properties-table .sn {
+    width: 60px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.properties-table .total-images {
+    width: 60px;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+.properties-table .td-icon {
+    width: 60px;
+    text-align: center;
+}
+
+/* Real estate management */

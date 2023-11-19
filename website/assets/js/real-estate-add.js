@@ -152,32 +152,32 @@ if (window.location.pathname === `${Config.PATHNAME}/real-estate-add`) {
         switch (responseJSON.message) {
           case "success":
             buttonLogin.removeAttr("disabled");
-            buttonLogin.html("Login");
+            buttonLogin.html("LOGIN");
             inputPassword.val("");
             showForm();
             break;
           case "error":
             alert(`${responseJSON?.data}`);
             buttonLogin.removeAttr("disabled");
-            buttonLogin.html("Login");
+            buttonLogin.html("LOGIN");
             break;
           default:
             alert(`An error occurred, login failed.`);
-            buttonUpload.removeAttr("disabled");
-            buttonUpload.html("Login");
+            buttonLogin.removeAttr("disabled");
+            buttonLogin.html("LOGIN");
         }
       } catch (e) {
-        uploadFeedback.html(`An error occurred, upload failed.`);
-        buttonUpload.removeAttr("disabled");
-        buttonUpload.html("Login");
+        alert(`An error occurred, upload failed.`);
+        buttonLogin.removeAttr("disabled");
+        buttonLogin.html("LOGIN");
       }
     });
 
     req.fail((error, textStatus) => {
       console.log("***************", error);
-      uploadFeedback.html(`An error occurred, upload failed.`);
+      alert(`An error occurred, upload failed.`);
       buttonUpload.removeAttr("disabled");
-      buttonUpload.html("Upload");
+      buttonUpload.html("UPLOAD");
     });
   };
 
@@ -210,7 +210,7 @@ if (window.location.pathname === `${Config.PATHNAME}/real-estate-add`) {
         switch (responseJSON.message) {
           case "success":
             buttonSave.removeAttr("disabled");
-            buttonSave.html("Save");
+            buttonSave.html("SAVE");
             inputImage.removeAttr("disabled");
             estateId = responseJSON?.data;
             buttonSave.css("display", "none");
@@ -218,25 +218,25 @@ if (window.location.pathname === `${Config.PATHNAME}/real-estate-add`) {
           case "error":
             alert(`${responseJSON?.data}`);
             buttonSave.removeAttr("disabled");
-            buttonSave.html("Save");
+            buttonSave.html("SAVE");
             break;
           default:
             alert(`An error occurred.`);
             buttonSave.removeAttr("disabled");
-            buttonSave.html("Login");
+            buttonSave.html("SAVE");
         }
       } catch (e) {
-        uploadFeedback.html(`An error occurred.`);
+        alert(`An error occurred.`);
         buttonSave.removeAttr("disabled");
-        buttonSave.html("Save");
+        buttonSave.html("SAVE");
       }
     });
 
     req.fail((error, textStatus) => {
       console.log("***************", error);
-      uploadFeedback.html(`An error occurred, upload failed.`);
-      buttonUpload.removeAttr("disabled");
-      buttonUpload.html("Upload");
+      alert(`An error occurred, upload failed.`);
+      buttonSave.removeAttr("disabled");
+      buttonSave.html("SAVE");
     });
   };
 
@@ -267,8 +267,7 @@ if (window.location.pathname === `${Config.PATHNAME}/real-estate-add`) {
         switch (responseJSON.message) {
           case "success":
             buttonUpload.removeAttr("disabled");
-            buttonUpload.html("Upload");
-            buttonUpload.removeAttr("disabled");
+            buttonUpload.html("UPLOAD");
             let _uploadedImage = responseJSON?.data?.[0];
             images.push(_uploadedImage);
 
@@ -288,17 +287,17 @@ if (window.location.pathname === `${Config.PATHNAME}/real-estate-add`) {
           case "error":
             alert(`${responseJSON?.data}`);
             buttonUpload.removeAttr("disabled");
-            buttonUpload.html("Upload");
+            buttonUpload.html("UPLOAD");
             break;
           default:
             alert(`An error occurred.`);
             buttonUpload.removeAttr("disabled");
-            buttonUpload.html("Upload");
+            buttonUpload.html("UPLOAD");
         }
       } catch (e) {
         alert(`An error occurred.`);
         buttonUpload.removeAttr("disabled");
-        buttonUpload.html("Upload");
+        buttonUpload.html("UPLOAD");
       }
     });
 
@@ -306,7 +305,7 @@ if (window.location.pathname === `${Config.PATHNAME}/real-estate-add`) {
       console.log("***************", error);
       alert(`An error occurred, upload failed.`);
       buttonUpload.removeAttr("disabled");
-      buttonUpload.html("Upload");
+      buttonUpload.html("UPLOAD");
     });
   };
 
@@ -346,7 +345,7 @@ if (window.location.pathname === `${Config.PATHNAME}/real-estate-add`) {
             isBusy = false;
         }
       } catch (e) {
-        uploadFeedback.html(`An error occurred.`);
+        alert(`An error occurred.`);
         isBusy = false;
       }
     });

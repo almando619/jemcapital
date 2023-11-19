@@ -66,6 +66,7 @@
                     <label for="description">Description</label>
                     <textarea name="description" id="input-description" cols="30" rows="10"></textarea>
                 </div>
+                <button class="mt-20" id="button-save">SAVE CHANGES</button>
 
                 <div class="container-100 app-input-wrapper">
                     <h3>Images</h3>
@@ -74,37 +75,14 @@
                     <div id="image-input-wrapper">
                         <input id="input-image" name="input-image" type="file" accept="image/*" />
                     </div>
-                    <button id="button-upload-image">Upload</button>
+                    <button id="button-upload">Upload</button>
                 </div>
                 <div class="flex-row mt-20 full-width" id="images-container">
-                    <div class="estate-image">
-                        <img src="./assets/images/real_estate_2.jpg" alt="">
-                        <div class="close-icon">
-                            <i class="fas fa-times"></i>
-                        </div>
-                    </div>
-                    <div class="estate-image">
-                        <img src="./assets/images/real_estate_2.jpg" alt="">
-                        <div class="close-icon">
-                            <i class="fas fa-times"></i>
-                        </div>
-                    </div>
-                    <div class="estate-image">
-                        <img src="./assets/images/real_estate_2.jpg" alt="">
-                        <div class="close-icon">
-                            <i class="fas fa-times"></i>
-                        </div>
-                    </div>
-                    <div class="estate-image">
-                        <img src="./assets/images/real_estate_2.jpg" alt="">
-                        <div class="close-icon">
-                            <i class="fas fa-times"></i>
-                        </div>
-                    </div>
+
                 </div>
 
                 <!-- Complete -->
-                <button class="mt-20" id="button-done">SAVE CHANGES</button>
+                <button class="mt-20" id="button-finish">FINISH</button>
             </div>
             <!-- form view -->
         </div>
