@@ -15,7 +15,7 @@
             <div class="logo-wrapper">
                 <img src="./assets/icons/logo.png" alt="JEM | Capital" id />
             </div>
-            <p class="text-align-center">FINANCIAL CONSULTANCY COMPANY & REAL ESTATE AGENT</p>
+            <h3 class="text-align-center mt-30">FINANCIAL CONSULTANCY COMPANY & REAL ESTATE AGENT</h3>
         </div>
         <div class="flex-row">
             <div class="container-100" id="image-container-1">
@@ -32,7 +32,7 @@
         <!-- Welcome section -->
 
         <!-- Services swiper -->
-        <div class="app-padding mt-20 text-align-center">
+        <div class="app-padding mt-30 mb-30 text-align-center">
             <h1>Our Services</h1>
         </div>
         <div class="swiper services-swiper">
@@ -95,6 +95,16 @@
             <div class="swiper-pagination"></div>
         </div>
         <!-- Services swiper -->
+
+        <!-- Real Estate Updates -->
+        <div class="app-padding  mt-30 mb-30 text-align-center">
+            <h1>Real Estate Updates</h1>
+        </div>
+
+        <!-- Real Estate Updates -->
+        <div class="flex-row app-padding" id="properties-container"></div>
+
+        <div class="spacer"></div>
     </div>
     <?php include_once("components/footer.php") ?>
     <?php include_once("components/script-imports.php") ?>
