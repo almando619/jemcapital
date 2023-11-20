@@ -3,7 +3,7 @@
 
 <head>
     <?php include_once("components/header-imports.php") ?>
-    <title>JEMCapital | Empty</title>
+    <title>JEMCapital | Real Estate</title>
 </head>
 
 <body id="">
@@ -13,7 +13,7 @@
         <!-- banner -->
         <div class="page-banner-wrapper mb-20">
             <div class="page-banner">
-                <img src="./assets/images/people_1.jpg" alt="image">
+                <img src="./assets/images/real_estate_3.jpg" alt="image">
                 <div class="shader"></div>
             </div>
             <div class="heading-container">
@@ -37,7 +37,7 @@
             </p>
 
             <h3 class="text-accent">
-                Renting and selling homes
+                Renting of properties
             </h3>
             <p>
                 We manage rental properties on behalf of landlords.
@@ -57,14 +57,6 @@
             </h3>
             <p>
                 We help businesses find, lease, purchase or sell commercial properties.
-            </p>
-
-            <h3 class="text-accent">
-                Investment property services
-            </h3>
-            <p>
-                We help investors find and purchase investment them when the time is right.
-
             </p>
 
             <h2 class="mt-30">Latest Updates</h2>
