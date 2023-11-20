@@ -8,7 +8,7 @@ if (
     isset($_POST['estate-id'])
 ) {
     $query = "UPDATE real_estate SET
-                status = ?,
+                status = ?
              WHERE 
                 estate_id = ?";
 

@@ -21,13 +21,35 @@ if (window.location.pathname === `${Config.PATHNAME}/real-estate-manage`) {
 
   const addDeleteListItemListeners = () => {
     properties.forEach((property) => {
-      $(`#delete-estate-${property?.estateId}`).click(() => {
+      $(`#delete-estate-${property?.estateId}`).click((e) => {
+        e.preventDefault();
         if (
           confirm(
             "Are you sure you wan to delete this property? This action is irreversible."
           )
         ) {
           deleteProperty(property?.estateId);
+        }
+      });
+    });
+  };
+
+  const addUpdateStatusListItemListeners = () => {
+    properties.forEach((property) => {
+      $(`#update-status-estate-${property?.estateId}`).click((e) => {
+        e.preventDefault();
+
+        if (
+          confirm(
+            `Are you sure you wan to ${
+              property?.status === "A" ? "hide" : "show"
+            } this property?`
+          )
+        ) {
+          updatePropertyStatus(
+            property?.estateId,
+            property?.status === "A" ? "I" : "A"
+          );
         }
       });
     });
@@ -44,7 +66,7 @@ if (window.location.pathname === `${Config.PATHNAME}/real-estate-manage`) {
 
   const showTable = () => {
     authView.css("display", "none");
-    tableView.css("display", "flex");
+    tableView.css("display", "block");
   };
 
   //api calls
@@ -152,7 +174,6 @@ if (window.location.pathname === `${Config.PATHNAME}/real-estate-manage`) {
     });
   };
 
-  //api calls
   const getProperties = () => {
     var _link = "./api/getProperties.php";
 
@@ -179,17 +200,61 @@ if (window.location.pathname === `${Config.PATHNAME}/real-estate-manage`) {
           case "success":
             properties = responseJSON?.data;
             let _html = "";
+            let _rows = "";
 
-            properties.forEach((property) => {
-              _html = `
-                ${_html}
-               
-                `;
+            properties.forEach((property, index) => {
+              _rows = `
+                  ${_rows}
+                  <tr>
+                      <td class="sn">${index + 1}</td>
+                      <td>${property?.title}</td>
+                      <td class="total-images">${property?.images?.length}</td>
+                      <td class="td-icon">
+                          <a href="${
+                            Config.PATHNAME
+                          }/real-estate-edit?estate-id=${property?.estateId}">
+                              <i class="fa-solid fa-pen-to-square text-accent"></i>
+                          </a>
+                      </td>
+                      <td class="td-icon">
+                          <a href="#" id="update-status-estate-${
+                            property?.estateId
+                          }" >
+                              <i class="fa-solid fa-eye${
+                                property?.status === "A" ? "-slash" : ""
+                              } text-accent"></i>                  
+                          </a>
+                      </td>
+                      <td class="td-icon">
+                          <a href="#" id="delete-estate-${property?.estateId}" >
+                              <i class="fa-solid fa-trash-can text-accent"></i>
+                          </a>
+                      </td>
+                  </tr>
+              `;
             });
+
+            _html = ` 
+            <h3 class="mb-20" >List of All Properties</h3>
+            <table class="properties-table">
+                <thead>
+                    <th>S/N</th>
+                    <th>Title</th>
+                    <th>Images</th>
+                    <th>Edit</th>
+                    <th>Visibility</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody>
+                    ${_rows}
+                </tbody>
+              </table>
+            `;
 
             tableView.html(_html);
 
             addDeleteListItemListeners();
+            addUpdateStatusListItemListeners();
             break;
           case "error":
             console.error("********", responseJSON?.data);
@@ -224,6 +289,56 @@ if (window.location.pathname === `${Config.PATHNAME}/real-estate-manage`) {
             Something went wrong. Failed to load properties.
         </div>
       `);
+    });
+  };
+
+  const updatePropertyStatus = (estateId, status) => {
+    var _link = "./api/updatePropertyStatus.php";
+
+    let formData = new FormData();
+    formData.append("status", status);
+    formData.append("estate-id", estateId);
+
+    var req = $.ajax({
+      url: _link,
+      method: "POST",
+      dataType: "json",
+      cache: false,
+      contentType: false,
+      processData: false,
+      data: formData,
+      beforeSend: () => {
+        isBusy = true;
+      },
+    });
+
+    req.done((data) => {
+      try {
+        const responseJSON = { ...data };
+        switch (responseJSON.message) {
+          case "success":
+            isBusy = false;
+            alert(`${responseJSON?.data}`);
+            getProperties();
+            break;
+          case "error":
+            alert(`${responseJSON?.data}`);
+            isBusy = false;
+            break;
+          default:
+            alert(`An error occurred, login failed.`);
+            isBusy = false;
+        }
+      } catch (e) {
+        alert(`An error occurred, upload failed.`);
+        isBusy = false;
+      }
+    });
+
+    req.fail((error, textStatus) => {
+      console.log("***************", error);
+      alert(`An error occurred, upload failed.`);
+      isBusy = false;
     });
   };
 

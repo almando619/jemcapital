@@ -9,3 +9,4 @@
 <script src="assets/js/real-estate-add.js" type='text/javascript'></script>
 <script src="assets/js/real-estate-edit.js" type='text/javascript'></script>
 <script src="assets/js/real-estate-view.js" type='text/javascript'></script>
+<script src="assets/js/real-estate-manage.js" type='text/javascript'></script>

@@ -56,7 +56,7 @@
                         <tr>
                             <td class="sn">1</td>
                             <td>House for sell in Morombo Center</td>
-                            <td class="total-images" >4</td>
+                            <td class="total-images">4</td>
                             <td class="td-icon">
                                 <a href="#">
                                     <i class="fa-solid fa-pen-to-square text-accent"></i>
@@ -64,18 +64,18 @@
                             </td>
                             <td class="td-icon">
                                 <a href="#">
-                                    <i class="fa-solid fa-eye text-accent"></i>
-                                    <!-- <i class="fa-solid fa-eye-slash text-accent"></i> -->
-                </a>
-                </td>
-                <td class="td-icon">
-                    <a href="#">
-                        <i class="fa-solid fa-trash-can text-accent"></i>
-                    </a>
-                </td>
-                </tr>
+                                    <i class="fa-solid fa-eye text-accent"></i> -->
+                <!-- <i class="fa-solid fa-eye-slash text-accent"></i> -->
+                <!-- </a>
+                            </td>
+                            <td class="td-icon">
+                                <a href="#">
+                                    <i class="fa-solid fa-trash-can text-accent"></i>
+                                </a>
+                            </td>
+                        </tr>
 
-                </tbody>
+                    </tbody>
                 </table> -->
             </div>
             <!-- table view -->

@@ -32,7 +32,7 @@ if (isset($_POST['estate-id'])) {
   }
 
   //delete estate property
-  $res1 = mysqli_query($conn, "DELETE FROM real_estate WHERE image_id = $estateId");
+  $res1 = mysqli_query($conn, "DELETE FROM real_estate WHERE estate_id = $estateId");
   if ($res1) {
     $response->message = "success";
     $response->data = "Property deleted successfully";
