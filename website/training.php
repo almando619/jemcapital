@@ -87,6 +87,10 @@
                 <i class="fas fa-check mr-10 text-accent"></i>
                 Business Communication skills.
             </p>
+            <p>
+                <i class="fas fa-check mr-10 text-accent"></i>
+                Business Management
+            </p>
         </div>
         <!-- content -->
     </div>
