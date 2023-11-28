@@ -25,8 +25,8 @@
         <!-- content -->
         <div class="page-padded-body">
             <p>
-                <b>JEM CAPITAL LIMITED</b>, is a registered financial consultancy company in Tanzania,
-                with head office located in Dodoma Tanzania.
+                <b>JEM CAPITAL LIMITED</b>, is a registered financial consultancy company and real estate agency in Tanzania,
+                with head office located at Meliwa Dodoma, near Ipagala B Primary School. 
             </p>
             <p>
                 It has a team of 15 people with different skills in Accounting, Auditing, Tax, Advisory, Brela Issues and Real estate.

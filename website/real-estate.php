@@ -37,15 +37,7 @@
             </p>
 
             <h3 class="text-accent">
-                Renting of properties
-            </h3>
-            <p>
-                We manage rental properties on behalf of landlords.
-                This includes collecting rent, screening tenants, and handling maintenance and repairs.
-            </p>
-
-            <h3 class="text-accent">
-                Property management
+                Renting and management of properties
             </h3>
             <p>
                 We manage rental properties on behalf of landlords.
@@ -57,6 +49,13 @@
             </h3>
             <p>
                 We help businesses find, lease, purchase or sell commercial properties.
+            </p>
+
+            <h3 class="text-accent">
+                Buying and selling of land
+            </h3>
+            <p>
+                We help our customer with purchase and selling of land through appropriate procedures.
             </p>
 
             <h2 class="mt-30">Latest Updates</h2>

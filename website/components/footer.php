@@ -2,16 +2,10 @@
     <!-- contacts -->
     <div class="container-30 mr-20 mb-20">
         <h3 class="mb-20">Contacts Us</h3>
-        <a href="tel:+255784745535">
+        <a href="tel:+255743662277">
             <div class="contact-item">
                 <img src="./assets/icons/icons_phone.png" alt="📞">
-                +255 784 745 535
-            </div>
-        </a>
-        <a href="tel:+255736200707">
-            <div class="contact-item">
-                <img src="./assets/icons/icons_phone.png" alt="📞">
-                +255 736 200 707
+                +255 743 662 277
             </div>
         </a>
         <a href="mailto:info@jemcapital.co.tz">
@@ -31,10 +25,10 @@
     <div class="container-30 mr-20 mb-20">
         <h3 class="mb-10">Our Social Media</h3>
         <div class="mt-20"></div>
-        <a href="https://wa.me/255784745535">
+        <a href="https://wa.me/255743662277">
             <div class="contact-item">
                 <img src="./assets/icons/icon_whatsapp.png" alt="🗨️">
-                +255 784 745 535
+                +255 743 662 277
             </div>
         </a>
         <a href="https://www.instagram.com/jemcapitallimited/">
@@ -43,13 +37,13 @@
                 @jemcapitallimited
             </div>
         </a>
-        <a href="#">
+        <a href="/#">
             <div class="contact-item">
                 <img src="./assets/icons/icon_facebook.png" alt="🗨️">
                 @jemcapitallimited
             </div>
         </a>
-        <a href="#">
+        <a href="/#">
             <div class="contact-item">
                 <img src="./assets/icons/icon_linkedin.png" alt="🗨️">
                 jem_capital

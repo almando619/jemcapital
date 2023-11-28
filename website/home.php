@@ -21,7 +21,7 @@
             <div class="container-100" id="image-container-1">
                 <div class="welcome-shader app-padding flex-row align-items-center justify-content-center">
                     <h2>
-                        We are a financial consultancy & real estate company offering a wide variety of services including
+                        We are a financial consultancy company & real estate agency offering a wide variety of services including
                         Accounting, Auditing, Tax, Advisory and many others. Click <a class="text-accent" href="about">here</a>
                         to learn more about us.
                     </h2>
