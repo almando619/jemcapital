@@ -20,6 +20,12 @@
                 joshua@jemcapital.co.tz
             </div>
         </a>
+        <a href="https://maps.app.goo.gl/dUhnUEiDohETA2Fm8">
+            <div class="contact-item">
+                <img src="./assets/icons/icon_location.png" alt="📌">
+                Meliwa, Dodoma Tanzania
+            </div>
+        </a>
     </div>
     <!-- social media -->
     <div class="container-30 mr-20 mb-20">
