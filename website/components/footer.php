@@ -4,7 +4,7 @@
         <h3 class="mb-20">Contacts Us</h3>
         <a href="tel:+255743662277">
             <div class="contact-item">
-                <img src="./assets/icons/icons_phone.png" alt="📞">
+                <img src="./assets/icons/icon_phone.png" alt="📞">
                 +255 743 662 277
             </div>
         </a>
